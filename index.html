@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Turtles At Rest</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item src="cartoon_turtle/scene.gltf" id="TurtDon"></a-asset-item>
+            <a-asset-item src="islands/scene.gltf" id="IsDon"></a-asset-item>
+            <a-asset-item src="researcher/scene.gltf" id="ReDon"></a-asset-item>
+            <img src="space.jpeg" id="sPdOn">
+        </a-assets>
+        <a-sky src="#sPdOn" rotation="-180 10 0"></a-sky>
+        <a-entity gltf-model="#IsDon" position="-10 -25 -12" scale="3 3 3"></a-entity>
+        <a-entity gltf-model="#ReDon" position="-10 -20 15" rotation="0 180 0" scale="3 3 3"></a-entity>
+        <a-camera look-controls-enabled wasd-controls="fly:true" position="-10 -18 -20"></a-camera>
+    </a-scene>
+</body>
