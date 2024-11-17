@@ -1,4 +1,4 @@
-AFRAME.registerComponent('MovementOfFreedom', {
+AFRAME.registerComponent('movementoffreedom', {
     init: function () {
         window.addEventListener("keydown",(e) => {
             R_R = this.el.getAttribute('rotation')
@@ -26,6 +26,11 @@ AFRAME.registerComponent('MovementOfFreedom', {
     },
     tick: function () {
         Cam = document.getElementById('CamDon');
-        CamPos = Cam.getAttribute('position');
-    }
- })
+         camera_position = Cam.getAttribute('position');
+        this.el.setAttribute("position",{
+            x: camera_position.x - 0,
+            y: camera_position.y - 9,
+            z: camera_position.z - 9,
+        });
+    },
+ });
