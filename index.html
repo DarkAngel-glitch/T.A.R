@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Turtles At Rest!</title>
@@ -6,6 +7,7 @@
     <script
       src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
     <script src="movement.js"></script>
+    <script src="whatever.js"></script>
     </head>
 <body>
     <a-scene physics="gravity: 0">
@@ -19,18 +21,16 @@
         <a-entity kinematic-body look-controls wasd-controls="acceleration: 200" camera position="-10 -18 -20" rotation="-6 -0.5 0" id="CamDon">
         <a-entity position="-5 -5 -12">
         <a-entity position="-0.6 0.13 0" text="font: aileronsemibold; width:12; color: turquoise; value: TURTLES\nTo Be RESCUED;"></a-entity>
-        </a-entity>
-        <a-entity position="-8 0.3 0" text="font: exo2bold; align:center; width:30; color: turquoise; value: 5;"></a-entity>
-        </a-entity>
-        <a-entity position="15 0.3 0" text="font: aileronsemibold; width:30; color: turquoise;"></a-entity>
+        <a-entity position="-8 0.3 0" text="font: exo2bold; align:center; width:30; color: turquoise; value: 5;" id="Purpl"></a-entity>
+        <a-entity position="15 0.3 0" text="font: aileronsemibold; width:30; color: turquoise;" id="VAl0"></a-entity>
         </a-entity>
         </a-entity>
         <a-entity gltf-model="#IsDon" position="-10 -25 -12" scale="3 3 3"></a-entity>
-        <a-entity gltf-model="#ReDon" movementoffreedom position="-56 -24.175 -52" rotation="0 180 0" scale="3 3 3"></a-entity>
-        <a-entity gltf-model="#TurtDon" position="-4 -24 5" scale="3 3 3"></a-entity>
-        <a-entity gltf-model="#TurtDon" position="4 -24 -5" scale="3 3 3"></a-entity>
-        <a-entity gltf-model="#TurtDon" position="4 -24 -37" scale="3 3 3"></a-entity>
-        <a-entity gltf-model="#TurtDon" position="4 -24 -49" scale="3 3 3"></a-entity>
-        <a-entity gltf-model="#TurtDon" position="4 -24 -26" scale="3 3 3"></a-entity>
+        <a-entity gltf-model="#ReDon" movementoffreedom position="-56 -24.175 -52" rotation="0 180 0" scale="3 3 3" static-body="shape: sphere; sphereRadius:6"whateveroffreedom></a-entity>
+        <a-entity gltf-model="#TurtDon" position="-4 -24 5" scale="3 3 3" static-body="shape: sphere; sphereRadius:12" whateveroffreedom></a-entity>
+        <a-entity gltf-model="#TurtDon" position="4 -24 -5" scale="3 3 3" static-body="shape: sphere; sphereRadius:12" whateveroffreedom></a-entity>
+        <a-entity gltf-model="#TurtDon" position="4 -24 -37" scale="3 3 3" static-body="shape: sphere; sphereRadius:12" whateveroffreedom></a-entity>
+        <a-entity gltf-model="#TurtDon" position="4 -24 -49" scale="3 3 3" static-body="shape: sphere; sphereRadius:12" whateveroffreedom></a-entity>
+        <a-entity gltf-model="#TurtDon" position="4 -24 -26" scale="3 3 3" static-body="shape: sphere; sphereRadius:12" whateveroffreedom></a-entity>
     </a-scene>
 </body>
